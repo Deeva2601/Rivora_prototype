@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" role="img" aria-labelledby="title">
+  <title id="title">RIVORA reusable bottle with a dual-flavour twist cap</title>
+  <defs>
+    <linearGradient id="cap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a66a68"/>
+      <stop offset=".23" stop-color="#702b3a"/>
+      <stop offset=".6" stop-color="#511626"/>
+      <stop offset="1" stop-color="#37101c"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity=".95"/>
+      <stop offset=".08" stop-color="#fff" stop-opacity=".54"/>
+      <stop offset=".27" stop-color="#fff" stop-opacity=".12"/>
+      <stop offset=".51" stop-color="#fff" stop-opacity=".38"/>
+      <stop offset=".78" stop-color="#efd9cc" stop-opacity=".2"/>
+      <stop offset=".95" stop-color="#fff" stop-opacity=".74"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".96"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#efbc75" stop-opacity=".34"/>
+      <stop offset=".48" stop-color="#ffd1a2" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#df7580" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="lemon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff2a5"/>
+      <stop offset="1" stop-color="#dca927"/>
+    </linearGradient>
+    <linearGradient id="berry" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffc3b8"/>
+      <stop offset="1" stop-color="#d94561"/>
+    </linearGradient>
+    <clipPath id="bottle-body">
+      <path d="M112 197h136l25 32q15 17 15 39v260q0 47-48 52H120q-48-5-48-52V268q0-22 15-39l25-32Z"/>
+    </clipPath>
+    <filter id="shadow" x="-.3" y="-.15" width="1.7" height="1.5">
+      <feDropShadow dx="0" dy="15" stdDeviation="12" flood-color="#482b2d" flood-opacity=".2"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <path d="M274 72h35q15 0 15 15v54q0 16-15 16h-25" fill="none" stroke="#541b2b" stroke-width="12" stroke-linecap="round"/>
+    <path d="M282 80h22q9 0 9 10v43q0 9-9 9h-20" fill="none" stroke="#b77968" stroke-width="4" stroke-linecap="round"/>
+
+    <path d="M112 194h136l20 29H92Z" fill="#e6d8ce" stroke="#bda99c" stroke-width="2"/>
+    <path d="M129 178h102v25H129z" fill="url(#glass)" stroke="#f8f3ee" stroke-width="3"/>
+    <path d="M121 185h118v9H121z" fill="#83525a" opacity=".3"/>
+
+    <path d="M72 102q0-38 41-38h134q41 0 41 38v66q0 31-31 31H103q-31 0-31-31z" fill="url(#cap)" stroke="#401523" stroke-width="3"/>
+    <path d="M83 100q0-25 30-25h135q31 0 31 25v10H83z" fill="#fff" opacity=".1"/>
+    <path d="M83 145h205v22q0 25-27 25H110q-27 0-27-25z" fill="#531b2a"/>
+    <path d="M84 145h204" stroke="#e8c4b2" stroke-opacity=".34" stroke-width="2"/>
+    <path d="M88 166h198" stroke="#2f0d17" stroke-opacity=".55" stroke-width="2"/>
+
+    <text x="174" y="127" text-anchor="middle" fill="#fff4e7" font-family="Georgia,serif" font-size="25" letter-spacing="2">R</text>
+    <text x="180" y="141" text-anchor="middle" fill="#f7e9dd" font-family="Arial,sans-serif" font-size="7" letter-spacing="3">TWIST TO CHOOSE</text>
+
+    <rect x="140" y="151" width="37" height="30" rx="9" fill="url(#lemon)" stroke="#fff0cf" stroke-width="2"/>
+    <rect x="183" y="151" width="37" height="30" rx="9" fill="url(#berry)" stroke="#ffe2d8" stroke-width="2"/>
+    <path d="M146 157h21" stroke="#fff" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"/>
+    <path d="M189 157h21" stroke="#fff" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"/>
+
+    <path d="M112 197h136l25 32q15 17 15 39v260q0 47-48 52H120q-48-5-48-52V268q0-22 15-39l25-32Z" fill="url(#glass)" stroke="#fffdf9" stroke-width="5"/>
+    <g clip-path="url(#bottle-body)">
+      <path d="M63 346q44 8 92 0t150 0v222H63z" fill="url(#water)"/>
+      <path d="M67 347q75-8 145 0t91-1" fill="none" stroke="#fff9ee" stroke-opacity=".83" stroke-width="4"/>
+      <path d="M92 234v310" stroke="#fff" stroke-opacity=".74" stroke-width="8" stroke-linecap="round"/>
+      <path d="M108 240v92" stroke="#fff" stroke-opacity=".68" stroke-width="3" stroke-linecap="round"/>
+      <path d="M274 259v273" stroke="#fff" stroke-opacity=".54" stroke-width="7" stroke-linecap="round"/>
+      <text x="180" y="407" text-anchor="middle" fill="#672c3b" font-family="Georgia,serif" font-size="20" letter-spacing="4">RIVORA</text>
+      <text x="180" y="426" text-anchor="middle" fill="#946056" font-family="Arial,sans-serif" font-size="6" letter-spacing="2">TWIST · CUSTOMISE · SIP</text>
+      <path d="M180 446c-5 9-12 15-12 22a12 12 0 0 0 24 0c0-7-7-13-12-22Z" fill="#c87d6a" opacity=".7"/>
+      <path d="M176 470q1 5 6 7" fill="none" stroke="#fff" stroke-opacity=".78" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <path d="M82 558q98 17 196 0" fill="none" stroke="#fff" stroke-opacity=".87" stroke-width="4"/>
+    <path d="M111 582q69 15 138 0" fill="none" stroke="#cbb7aa" stroke-opacity=".45" stroke-width="3"/>
+  </g>
+</svg>

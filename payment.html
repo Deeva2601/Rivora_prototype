@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f3ee">
+    <meta name="description" content="Review your RIVORA demo bag and explore a test-only checkout preview.">
+    <title>Your bag | RIVORA demo checkout</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=2">
+    <script src="script.js" defer></script>
+    <script src="payment.js" defer></script>
+  </head>
+  <body data-page="payment">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="site-header"><!-- SITE_HEADER --></div>
+    <main id="main">
+      <section class="page-hero page-hero-short section-shell">
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR RIVORA PICKS</p>
+        <h1>One last little <em>look.</em></h1>
+        <p>Your bag and a test-only checkout preview. No actual payment is taken.</p>
+      </section>
+      <section class="checkout-page section-shell">
+        <div class="checkout-bag-panel">
+          <div class="checkout-panel-heading"><h2>Your bag</h2><a href="shop.html">Keep browsing</a></div>
+          <div class="checkout-items" id="checkout-items" aria-live="polite"></div>
+          <div class="checkout-empty" id="checkout-empty" hidden><span aria-hidden="true">✳</span><h3>A little space for something fresh.</h3><p>Your bag is empty for now.</p><a class="button button-primary" href="shop.html">Shop now <span aria-hidden="true">→</span></a></div>
+          <div class="subtotal-row"><span>Subtotal</span><strong id="checkout-subtotal">₹0</strong></div>
+          <p class="shipping-note">Concept prices only. Shipping and real taxes are not calculated in this preview.</p>
+        </div>
+        <div class="payment-preview-card">
+          <div class="test-badge"><span aria-hidden="true">✳</span> DEMO PAYMENT · TEST ONLY</div>
+          <h2>Ready for a <em>fresh sip?</em></h2>
+          <p>This preview records anonymous purchase interest only. No card, UPI, address or contact details are requested.</p>
+          <div class="payment-options" aria-label="Example payment methods (not connected)">
+            <div><span class="payment-option-icon">UPI</span><span>UPI <small>Preview only</small></span><span class="option-tag">DEMO</span></div>
+            <div><span class="payment-option-icon">▤</span><span>Debit / credit card <small>Not connected</small></span><span class="option-tag">DEMO</span></div>
+          </div>
+          <div class="payment-total"><span>Demo total</span><strong id="payment-total">₹0</strong></div>
+          <button class="button button-primary pay-demo-button" id="pay-demo-button" type="button" disabled>Simulate demo checkout <span aria-hidden="true">→</span></button>
+          <p class="payment-disclaimer">No money will be charged. This is not a sale, receipt or real order. You can explore the test flow safely.</p>
+        </div>
+      </section>
+      <section class="payment-after section-shell"><span aria-hidden="true">♡</span><p>Questions about the concept? <a href="contact.html">Get in touch</a>.</p></section>
+      <section class="demo-success" id="demo-success" role="status" aria-live="polite" tabindex="-1" hidden>
+        <span class="success-check" aria-hidden="true">✓</span>
+        <p class="eyebrow"><span class="eyebrow-line"></span> CHECKOUT PREVIEW</p>
+        <h2>That’s a lovely <em>choice.</em></h2>
+        <p>Your demo checkout is complete. No payment was taken and nothing was shipped.</p>
+        <p class="demo-reference">Demo reference <strong id="demo-reference"></strong></p>
+        <a class="button button-primary" href="shop.html">Back to the collection <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+    <div id="site-footer"><!-- SITE_FOOTER --></div>
+  </body>
+</html>

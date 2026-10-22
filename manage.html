@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f3ee">
+    <meta name="description" content="Private RIVORA demo dashboard for anonymous store-interest counts.">
+    <title>Owner dashboard | RIVORA</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=2">
+    <script src="script.js" defer></script>
+    <script src="manage.js" defer></script>
+  </head>
+  <body data-page="manage">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="site-header"><!-- SITE_HEADER --></div>
+    <main id="main">
+      <section class="page-hero page-hero-short section-shell">
+        <p class="eyebrow"><span class="eyebrow-line"></span> JUST THE NUMBERS, NO PERSONAL DATA</p>
+        <h1>Your little <em>lookout.</em></h1>
+        <p>See how many people are exploring, adding to their bag and testing the checkout.</p>
+      </section>
+      <section class="dashboard section-shell">
+        <form class="dashboard-login" id="dashboard-login">
+          <label for="dashboard-password">Owner password</label>
+          <div class="login-row"><input id="dashboard-password" type="password" required minlength="16" autocomplete="current-password" placeholder="The password from your private .env file"><button class="button button-primary" type="submit">Sign in</button></div>
+          <p class="login-help" id="login-help">Set ADMIN_PASSWORD in your private .env file before signing in. This password stays on the server.</p>
+          <p class="form-error" id="login-error" role="alert" hidden></p>
+        </form>
+        <div class="dashboard-content" id="dashboard-content" hidden>
+          <div class="dashboard-toolbar"><div><span class="live-dot"></span> Anonymous demo analytics</div><button class="text-button" id="sign-out" type="button">Sign out</button></div>
+          <div class="metric-grid">
+            <article class="metric-card"><span>Unique visitors</span><strong id="metric-visitors">—</strong><small>Opted-in home-page visitors</small></article>
+            <article class="metric-card"><span>Explored a product</span><strong id="metric-product-visitors">—</strong><small>Opted-in visitors who viewed products</small></article>
+            <article class="metric-card"><span>Added to bag</span><strong id="metric-cart-visitors">—</strong><small>Unique visitors, not button presses</small></article>
+            <article class="metric-card"><span>Started checkout</span><strong id="metric-checkout-visitors">—</strong><small>Anonymous checkout interest</small></article>
+            <article class="metric-card"><span>Demo checkouts</span><strong id="metric-demo-orders">—</strong><small>Simulated only — ₹0 charged</small></article>
+            <article class="metric-card"><span>Contact clicks</span><strong id="metric-contact-visitors">—</strong><small>No message or contact details saved</small></article>
+          </div>
+          <section class="dashboard-table-section"><div class="dashboard-section-heading"><h2>Which flavours caught their eye?</h2><span>Unique opted-in visitors</span></div><div class="table-scroll"><table><thead><tr><th scope="col">Product</th><th scope="col">Views</th><th scope="col">Added to bag</th><th scope="col">Demo checkouts</th></tr></thead><tbody id="product-metrics"></tbody></table></div></section>
+          <section class="dashboard-table-section"><div class="dashboard-section-heading"><h2>Recent activity</h2><span>Last 14 days</span></div><div class="table-scroll"><table><thead><tr><th scope="col">Date</th><th scope="col">Visitors</th><th scope="col">Bag additions</th><th scope="col">Checkout starts</th></tr></thead><tbody id="daily-metrics"></tbody></table></div></section>
+          <p class="dashboard-note" id="dashboard-note">Counts use anonymous random browser IDs and aggregate events. Repeat visits from the same browser count once per action.</p>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"><!-- SITE_FOOTER --></div>
+  </body>
+</html>

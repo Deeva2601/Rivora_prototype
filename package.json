@@ -1,0 +1,13 @@
+{
+  "name": "rivora-storefront",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RIVORA demo storefront with a local SQLite database and privacy-friendly analytics.",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  }
+}
